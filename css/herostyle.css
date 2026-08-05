@@ -65,20 +65,20 @@
     background: linear-gradient(to bottom,
             #ffffff 50%,
             #dc143c 50%);
-    /* z-index: -1; */
+    z-index: -2;
 }
 
 .vs-badge {
     clip-path: polygon(51% 0, 100% 0, 46% 100%, 0% 100%);
 
     position: absolute;
-    top: 36%;
+    top: 40%;
     left: 50%;
     width: 19%;
-    height: 67%;
+    height: 75%;
 
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: -1;
 
     background: #000;
     color: #fff;
@@ -91,8 +91,8 @@
     font-size: 100px;
     font-weight: 700;
     position: absolute;
-    top: 35%;
-    left: 29%;
+    top: 20%;
+    left: 40%;
 }
 
 .match-status {
@@ -100,8 +100,8 @@
     font-size: 55px;
     font-weight: 700;
     position: absolute;
-    top: 57%;
-    left: 20%;
+    top: 40%;
+    left: 35%;
 }
 
 .hero-player {
