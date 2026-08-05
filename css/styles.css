@@ -46,6 +46,9 @@ body {
     margin-top: 5px;
     margin-left: 35%;
     gap: 25px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 50%;
     text-decoration: none !important;
     font-weight: bold;
     font-size: 1.8rem;
