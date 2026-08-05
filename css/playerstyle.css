@@ -1,0 +1,164 @@
+/* Contenedor principal que envuelve ambos lados */
+.match-roster {
+    display: flex;
+    width: 100%;
+    max-width: 1950px;
+    margin: 15px auto;
+    background-color: #0b021a;
+    /* Fondo morado oscuro de TV */
+    position: relative;
+    overflow: hidden;
+    font-family: 'Arial Black', sans-serif;
+}
+
+/* Configuración de cada mitad */
+.team-side {
+    flex: 1;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.team-poland-players,
+.team-usa-players {
+    flex: 1;
+    transition: flex 0.4s ease, transform 0.4s ease, clip-path 0.4s ease;
+}
+
+.team-poland-players {
+    background: linear-gradient(135deg, #eeedee 0%, #f11506 100%);
+    clip-path: polygon(0 0, 100% 0, 93% 100%, 0 100%);
+    padding-right: 8%;
+}
+
+.team-usa-players {
+    background: linear-gradient(135deg, #1118d1 0%, #e9dddc 50%, #e20a06 100%);
+    margin-left: -5%;
+}
+
+.team-poland-players:hover {
+    flex: 1.4;
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+}
+
+.team-usa-players:hover {
+    flex: 1.4;
+}
+
+.player-card,
+.coach-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    /* Transición suave para cuando la tarjeta o sus fotos escalen */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-card:hover,
+.coach-card:hover {
+    transform: scale(1.12) !important;
+    z-index: 10;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.team-content {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    flex: 1;
+}
+
+.player-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.coach-card {
+    width: 160px;
+}
+
+.player-info {
+    background-color: #080114;
+    color: white;
+    padding: 4px 2px;
+    font-size: 11px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-info .name {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.badge {
+    position: absolute;
+    left: 4px;
+    top: -12px;
+    padding: 2px 5px;
+    font-size: 9px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.number {
+    position: absolute;
+    left: 26px;
+    top: -12px;
+    background: #252525;
+    color: #fff;
+    padding: 2px 5px;
+    font-size: 9px;
+}
+
+/* Colores de badges por posición */
+.pos-oh {
+    background-color: #0044ff;
+    color: white;
+}
+
+/* Blue */
+.pos-mb {
+    background-color: #0055ff;
+    color: white;
+}
+
+.pos-op {
+    background-color: #0044ff;
+    color: white;
+}
+
+.pos-s {
+    background-color: #0033cc;
+    color: white;
+}
+
+.pos-l {
+    background-color: #aa0000;
+    color: white;
+}
+
+/* Estilo para el Head Coach */
+.coach-info {
+    flex-direction: column;
+    background-color: #0f0529;
+    height: 50px;
+}
+
+.coach-info .role {
+    color: #8b72de;
+    font-size: 9px;
+    margin-bottom: 2px;
+}

@@ -1,0 +1,69 @@
+.vs-badge {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+}
+
+.team-usa.show {
+
+    animation: usaSlide .8s forwards;
+}
+
+.team-poland.show {
+    animation: polSlide .8s forwards;
+}
+
+@keyframes usaSlide {
+
+    0% {
+        transform: translateX(-120%);
+    }
+
+    80% {
+        transform: translateX(5%);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes polSlide {
+
+    0% {
+        transform: translateX(120%);
+    }
+
+    80% {
+        transform: translateX(-5%);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+.vs-badge.show {
+
+    animation: vsPop .5s forwards;
+}
+
+@keyframes vsPop {
+
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    60% {
+        transform: translate(-50%, -50%) scale(1.25);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+
+}

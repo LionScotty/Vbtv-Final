@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.custom-navbar {
+    position: relative;
+    height: 60px;
+    background-color: #d8d5d5;
+    z-index: 10;
+    isolation: isolate;
+}
+
+.options {
+    gap: 20px;
+    /* position: absolute; */
+
+    height: 60px;
+    width: 50%;
+
+    margin-left: -150px;
+    right: 0;
+    top: 0;
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+}
+
+.custom-navbar::before {
+    content: "";
+    position: absolute;
+
+    height: 60px;
+    width: 30%;
+
+    clip-path: polygon(0% 0%,
+            60% 0%,
+            40% 100%,
+            0% 100%);
+    background: #070707;
+    z-index: 1;
+}
+
+/* Bandera */
+.bg {
+    position: absolute;
+
+    height: 60px;
+    width: 10%;
+
+    clip-path: polygon(25% 0%,
+            100% 0%,
+            75% 100%,
+            0% 100%);
+    right: 0;
+    top: 0;
+    background-color: black;
+}
+
+.band.b1 {
+    position: absolute;
+
+    height: 60px;
+    width: 10%;
+
+    clip-path: polygon(25% 0%,
+            100% 0%,
+            75% 100%,
+            0% 100%);
+
+    right: 10%;
+    top: 0;
+    background-color: black;
+    z-index: 2;
+}
+
+
+.band.b2 {
+    position: absolute;
+
+    height: 60px;
+    width: 5%;
+
+    clip-path: polygon(100% 0, 51% 100%, 0 0);
+    right: 20%;
+    bottom: 10px;
+
+    background-color: black;
+    z-index: 2;
+
+}
+
+.logo-container {
+    
+    position: relative !important;
+    z-index: 10 !important;
+    margin-left: 4%;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    position: relative !important;
+    z-index: 11 !important;
+    display: block;
+}
