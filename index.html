@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/herostyle.css">
   <link rel="stylesheet" href="css/playerstyle.css">
   <link rel="stylesheet" href="css/animacionI.css">
+  <link rel="stylesheet" href="css/statstyle.css">
 
   <title>USA-POLAND</title>
 </head>
@@ -313,8 +314,95 @@
 
   </section>
 
-  <section id="estadistica" class="">
+  <section id="estadistica" class="stats-section my-5">
+    <div class="stats-card">
 
+      <!-- Encabezado de Equipos -->
+      <div class="stats-header">
+        <div class="team-name team-left">
+          <span>Estados Unidos</span>
+          <img src="assets/Flag-Usa.jpg" alt="USA" class="flag">
+        </div>
+        <div class="stats-title">
+          Estadísticas Del Partido
+        </div>
+        <div class="team-name team-right">
+          <img src="assets/Flag-Poland.jpg" alt="Poland" class="flag">
+          <span>Polonia</span>
+        </div>
+      </div>
+
+      <!-- Lista de Filas de Estadísticas -->
+      <div class="stats-body">
+
+        <!-- Fila 1: Ataque -->
+        <div class="stat-row">
+          <div class="bar-container left">
+            <div class="bar fill-red" style="width: 80%;"></div>
+          </div>
+          <div class="num num-left highlight-red">65</div>
+          <div class="label">ATTACK</div>
+          <div class="num num-right">59</div>
+          <div class="bar-container right">
+            <div class="bar fill-gray" style="width: 70%;"></div>
+          </div>
+        </div>
+
+        <!-- Fila 2: Bloqueo -->
+        <div class="stat-row">
+          <div class="bar-container left">
+            <div class="bar fill-gray" style="width: 40%;"></div>
+          </div>
+          <div class="num num-left">8</div>
+          <div class="label">BLOCK</div>
+          <div class="num num-right highlight-red">12</div>
+          <div class="bar-container right">
+            <div class="bar fill-red" style="width: 75%;"></div>
+          </div>
+        </div>
+
+        <!-- Fila 3: Servicio -->
+        <div class="stat-row">
+          <div class="bar-container left">
+            <div class="bar fill-gray" style="width: 30%;"></div>
+          </div>
+          <div class="num num-left">4</div>
+          <div class="label">SERVE</div>
+          <div class="num num-right highlight-red">8</div>
+          <div class="bar-container right">
+            <div class="bar fill-red" style="width: 60%;"></div>
+          </div>
+        </div>
+
+        <!-- Fila 4: Errores del rival -->
+        <div class="stat-row">
+          <div class="bar-container left">
+            <div class="bar fill-gray" style="width: 50%;"></div>
+          </div>
+          <div class="num num-left">29</div>
+          <div class="label">OPPONENT ERRORS</div>
+          <div class="num num-right highlight-red">34</div>
+          <div class="bar-container right">
+            <div class="bar fill-red" style="width: 65%;"></div>
+          </div>
+        </div>
+
+        <!-- Fila 5: Total -->
+        <div class="stat-row border-top">
+          <div class="bar-container left">
+            <div class="bar fill-gray" style="width: 85%;"></div>
+          </div>
+          <div class="num num-left">106</div>
+          <div class="label fw-bold">TOTAL</div>
+          <div class="num num-right highlight-red">113</div>
+          <div class="bar-container right">
+            <div class="bar fill-red" style="width: 95%;"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
   </section>
 
   <footer>

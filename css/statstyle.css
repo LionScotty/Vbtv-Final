@@ -1,0 +1,107 @@
+/* Tarjeta Principal */
+.stats-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Header de la tarjeta */
+.stats-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.team-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.team-left { justify-content: flex-end; }
+.team-right { justify-content: flex-start; }
+
+.flag {
+  width: 24px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.stats-title {
+  color: #ff4d4d;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+
+/* Cada fila de estadística */
+.stat-row {
+  display: grid;
+  grid-template-columns: 1fr 45px 140px 45px 1fr;
+  align-items: center;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+.num {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #888;
+}
+
+/* Resaltado del líder en la estadística */
+.highlight-red {
+  color: #ff4d4d;
+}
+
+/* Contenedor y diseño de las Barras */
+.bar-container {
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+/* Invertir la dirección de la barra izquierda para que crezca de derecha a izquierda */
+.bar-container.left {
+  justify-content: flex-end;
+}
+
+.bar-container.right {
+  justify-content: flex-start;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 20px;
+  transition: width 0.5s ease-in-out;
+}
+
+.fill-red {
+  background-color: #ff4d4d;
+}
+
+.fill-gray {
+  background-color: #d1d1d1;
+}
