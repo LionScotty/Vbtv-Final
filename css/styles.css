@@ -7,39 +7,48 @@ body {
 .custom-navbar {
     position: relative;
     height: 60px;
-    background-color: #d8d5d5;
+    background-color: #ba2222;
     z-index: 10;
     isolation: isolate;
 }
 
-.options {
-    gap: 20px;
-    /* position: absolute; */
-
+.logo-container {
     height: 60px;
-    width: 50%;
-
-    margin-left: -150px;
-    right: 0;
-    top: 0;
-    background-color: aliceblue;
-    color: black;
-    display: flex;
-}
-
-.custom-navbar::before {
-    content: "";
-    position: absolute;
-
-    height: 60px;
-    width: 30%;
-
+    width: 35%;
     clip-path: polygon(0% 0%,
             60% 0%,
             40% 100%,
             0% 100%);
     background: #070707;
-    z-index: 1;
+}
+
+.logo {
+    width: 60px;
+    margin-left: 15%;
+}
+
+.option-container {
+    gap: 10px;
+    color: black;
+    display: flex;
+    position: absolute;
+
+    height: 60px;
+    width: 100%;
+    top: 0;
+    right: 0%;
+
+}
+
+.text-option {
+    display: flex;
+    color: black;
+    margin-top: 5px;
+    margin-left: 35%;
+    gap: 25px;
+    text-decoration: none !important;
+    font-weight: bold;
+    font-size: 1.8rem;
 }
 
 /* Bandera */
@@ -48,13 +57,13 @@ body {
 
     height: 60px;
     width: 10%;
+    right: 0;
+    top: 0;
 
     clip-path: polygon(25% 0%,
             100% 0%,
             75% 100%,
             0% 100%);
-    right: 0;
-    top: 0;
     background-color: black;
 }
 
@@ -88,20 +97,4 @@ body {
 
     background-color: black;
     z-index: 2;
-
-}
-
-.logo-container {
-    
-    position: relative !important;
-    z-index: 10 !important;
-    margin-left: 4%;
-}
-
-.logo {
-    width: 60px;
-    height: auto;
-    position: relative !important;
-    z-index: 11 !important;
-    display: block;
 }
